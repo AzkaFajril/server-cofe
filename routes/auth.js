@@ -4,7 +4,7 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 const fetch = require('node-fetch');
 const adminEmails = require('../config/admins');
-const auth = require('../middleware/auth'); // Added auth middleware
+const auth = require('../Middleware/auth'); // Added auth middleware
 
 router.post('/google', async (req, res) => {
   try {
